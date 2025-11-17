@@ -10,9 +10,11 @@
 #     else: 
 #         return False
 
-# slaptazodis=input()
-# teisingas_slap(slaptazodis)
-# print("geras slaptazodis"(true))
+# slaptazodis=input("Įvesk slaptažodį: ")
+# ar_teisingas = teisingas_slap(slaptazodis)
+# #MK pabaik kodą: jeigu teisingas, atspausdink "geras slaptazodis"
+# #priešingu atveju - "Slaptažodis neatitinka reikalavimų" arba panašiai :)
+# print("geras slaptazodis")
 
 # def patikrink_slap(slap):
 #     while slap != "Coding_is_fun":
@@ -22,7 +24,7 @@
 #         else:
 #             print("Teisinga!") 
 
-# slap=input()
+# slap=input() #trūksta, kad terminale matytųsi, ko nori iš vartotojo :)
 # patikrink_slap(slap)
 
 # def tiesines_paeiska(sarasas, ieskomas_el):
@@ -38,25 +40,31 @@
 # print(tiesines_paeiska(sarasas,ieskomas_el)) 
 
 
-#TIESINES FUNKCIJOS 1 UZDUOTIS
+# # TIESINES paieškos FUNKCIJOS 1 UZDUOTIS
+# #MK funkcijos yra įvairios ir skirtingos.
+# # Šitpje užduotyje tu kuri funkciją, kuri atlieka tiesinę paiešką.
 # sarasas=["palapine","maistas","zemelapis","miegmaisis","rubai","batai"]
 
 # def ties_funkcija(sarasas, ieskomas_daiktas):
 #     for i in range(len(sarasas)):
-#         if sarasas[i] == ieskomas_daiktas :
+#         if sarasas[i] == ieskomas_daiktas:
 #             return i
 #     return -1
 
 # ieskomas_daiktas = "rubai"
-# print(ties_funkcija(sarasas,ieskomas_daiktas))
+# print("Ieškomas daiktas:",ieskomas_daiktas)
+# if ties_funkcija(sarasas,ieskomas_daiktas) > 0:
+#     print("Daiktas rastas")
+# else: 
+#     print("Nerasta")
 
-#TIESINES FUNKCIJOS 2 UZDUOTIS 
+# #TIESINES paieškos FUNKCIJOS 2 UZDUOTIS 
+# #MK neužbaigta. Pradžia daug žadanti
+# daiktas1=[""]
+# daiktas2="daiktas"
 
-daiktas1=[""]
-daiktas2="daiktas"
+# def string_daiktai(daiktas2, daiktas1):
+#     if daiktas2 == daiktas1 :
+#         return "yra"
 
-def string_daiktai(daiktas2, daiktas1):
-    if daiktas2 == daiktas1 :
-        return "yra"
-
-def kiek_daiktu()
+# def kiek_daiktu()
