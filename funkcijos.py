@@ -17,14 +17,13 @@
 # print("geras slaptazodis")
 
 # def patikrink_slap(slap):
-#     while slap != "Coding_is_fun":
-#         slap=input("iveskite teisinga splatazodi: ")
+#      while slap != "Coding_is_fun":
+#         slap=input("iveskite teisinga splatazodi: ")                                                                #tik cia yra 
 #         if slap != "Coding_is_fun":
-#             print("Neteisinga bandykite dar karta")
+#              print("Neteisinga bandykite dar karta")
 #         else:
-#             print("Teisinga!") 
-
-# slap=input() #trūksta, kad terminale matytųsi, ko nori iš vartotojo :)
+#              print("Teisinga!") 
+# slap=input() #trūksta, kad terminale matytųsi, ko nori iš vartotojo :) #terminale yra pateikta ko yra norima is vartotojo ^ 
 # patikrink_slap(slap)
 
 # def tiesines_paeiska(sarasas, ieskomas_el):
@@ -68,3 +67,17 @@
 #         return "yra"
 
 # def kiek_daiktu()
+
+slaptazodis=input("Įvesk slaptažodį: ")
+# ar_teisingas = teisingas_slap(slaptazodis)
+def ar_teisingas(slaptazodis):
+    while slaptazodis != "miau":
+        slaptazodis=input("Bandykite dar karta: ")
+        if slaptazodis != "miau":
+            print("neteisingas")
+        else:
+            print("Geras slaptazodis")
+ar_teisingas(slaptazodis)
+
+# #MK pabaik kodą: jeigu teisingas, atspausdink "geras slaptazodis"
+# #priešingu atveju - "Slaptažodis neatitinka reikalavimų" arba panašiai :)
