@@ -1,0 +1,59 @@
+#Daugybos lentelė
+ 
+sk=int(input("Įvesk skaičių:"))
+sudaugintas=1
+for s in range(1,11):
+    sudaugintas=sk*s
+    print(sudaugintas)
+
+#Teigiamas sk sarasas
+n=[1,-2,3,4,-5,6,7,8,9]
+for sk in n:
+    if sk > 0:
+        print(sk)
+
+#Slaptazodis 
+passw=input("iveskite slaptazodi ")
+sk=False
+for raide in passw:
+    if raide.isdigit():
+        sk=True
+if len(passw)>7 and sk:
+    print(True)
+
+#Priebalses ir balses
+
+zodis=input("iveskite zodi ")
+balses="aeiouąęėįųūioAEIOUĄĘĖĮŲŪIO"
+
+b=0
+p=0
+for raides in zodis:
+    if raides in balses:
+        b= b+1
+    else: 
+        p= p+1
+print("Balsiu sk: ", b)
+print("Priebalsiu sk: ", p)
+
+
+
+
+
+
+Skaiciu kvadratai 
+
+sarasas=[2,6,4]
+kvadratas=[]
+for sk in sarasas:
+    kvadratas.append(sk**2)
+
+print(kvadratas)
+
+Atbulinis zodis 
+
+zodis=input("Iveskite zodi gausite atbula: ")
+atbulas=""
+for raides in zodis:
+    atbulas=raides+atbulas
+print(zodis,"atbulas",atbulas) 

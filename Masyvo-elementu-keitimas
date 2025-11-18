@@ -1,0 +1,91 @@
+# skaičiai = [1, 2, 3, 4, 5, 6, 7]
+# print(skaičiai)
+# skaičiai=skaičiai[::-2]
+# print(skaičiai)
+
+#Masyvo elementu sukeitimas vietomis
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# for i in range(0, elementu_sk - 1, 2):
+#     sarasas[i], sarasas[i+1] = sarasas[i+1], sarasas[i]
+# print(sarasas) 
+
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# while i < elementu_sk - 1:  #as nezinau kokia reiksme pateikti i 
+#     sarasas[i], sarasas[i+1] = sarasas[i+1], sarasas[i]
+#     i += 2
+# print(sarasas)
+
+#masyvo postumis i kaire
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# pirmas_elementas = sarasas[0]
+# for  i in range(n - 1):
+#     sarasas[i] = sarasas[i-1]
+# sarasas[elementu_sk - 1] = pirmas_elementas
+# print(sarasas)
+
+#masyvo postumis i kaire, saraso pjūvis 
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# sarasas = sarasas[1 : elementu_sk] + [sarasas[0]]
+# print(sarasas)
+
+#postumis i desine 
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# paskutinis_elementas = sarasas[elementu_sk - 1]
+# i = elementu_sk - 1 
+# while i > 0:
+#     sarasas[i] = sarasas[i -1]
+#     i-= 1 
+# sarasas[0] = paskutinis_elementas 
+# print(sarasas)
+
+#2var. 
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# paskutinis_elementas = sarasas[elementu_sk - 1]
+# for i in range(elementu_sk - 1, 0, -1)
+#     sarasas[i] = sarasas[i -1]
+# sarasas[0] = paskutinis_elementas 
+# print(sarasas)
+
+#masyvo reversas
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas)
+# for i in range(elementu_sk//2):
+#     sarasas[i], sarasas[elementu_sk - 1 - i] = sarasas[elementu_sk - 1 - i], sarasas[i]
+# print(sarasas)
+
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas) 
+# sarasas.reverse()
+# print(sarasas)
+
+# sarasas= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# elementu_sk=len(sarasas)
+# print(sarasas) 
+# sarasas = sarasas[:: -1]
+# print(sarasas)
+
+# 1 savarankiska uzduotis 
+from random import randint
+elementu_sk = 10
+sarasas = [randint(10, 60)for i in range(elementu_sk)]
+print(sarasas)
+priespaskutinis_elem = sarasas[elementu_sk - 2]
+for i in range(elementu_sk - 1, 0, -1):
+   sarasas[i] = sarasas[i -1]
+sarasas[0] = priespaskutinis_elem 
+print(sarasas)
+
