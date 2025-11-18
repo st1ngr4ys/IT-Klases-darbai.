@@ -89,3 +89,5 @@ for i in range(elementu_sk - 1, 0, -1):
 sarasas[0] = priespaskutinis_elem 
 print(sarasas)
 
+
+#pakeiciau
