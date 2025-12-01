@@ -1,0 +1,114 @@
+## Kontrolinis darbas iš Python programavimo
+## Praktinė dalis 25-40 min
+
+# ----------------------------------------
+#
+#  STRUKTŪRA:
+#  1. Kodo supratimo klausimai
+#  2. Mažos programavimo užduotys
+#  3. Didžioji programavimo užduotis
+#
+#  Atsakymus rašykite tiesiog šiame faile.
+#
+#  Priminimas: pažymėjus kelias eilutes, jas užkoduoti galima su ctrl + ?
+# ----------------------------------------
+
+# ========================================
+# 1 DALIS – KODO SUPRATIMO KLAUSIMAI
+# ========================================
+
+# # KLAUSIMAS 1. Kodėl antram kintamajam naudojama int() funkcija?
+# vardas = input("Koks tavo vardas? ")
+# skaičius = int(input("Įvesk skaičių nuo 1 iki 100: "))
+
+# print("Labas", vardas, "tavo skaičius", skaičius * 5)
+
+# # ATSAKYMAS: Int funkcija paverčia naudotojo įvestą tekstą į skaičių.
+
+# # KLAUSIMAS 2. Kam iš esmės reikalinga eilutė i = i + 1 ?
+# i = 0
+# while i < 5: 
+#     print(i)
+#     i = i + 1 
+
+# # ATSAKYMAS: Kitaip bus begalinis ciklas, nes i visuomet būtų lygus 0
+
+# # KLAUSIMAS 3. Ką darys žemiau esančio kodo dalis?
+
+# password = ''
+# while password != "Coding_is_fun!":
+#     password = input()
+
+# # ATSAKYMAS: while cikle tikrina ar kintamasis password yra nelygus "Coding_is_fun!", jei taip nelygu tai leidžia naudotojui įvesti nauja reikšmą kintamajame. 
+
+# # KLAUSIMAS 4. 
+# # Perskaityk šį kodą ir parašyk:
+# # - ką programa atspausdins,
+# # - paaiškink savo žodžiais, kodėl taip gaunasi.
+
+# x = 4
+# numbers = [10, 20, 30, 40, 50]
+# result = numbers[x % 3] 
+
+# # Ką atspausdins programa? nieko, nes nėra print funkcijos.
+# # Paaiškinimas, kodėl taip gaunasi (2–3 sakiniai): Yra kintamasis x kurio reiksme 4, masyvas numbers ir result kurio reiksmė nurodo iš sarašo numbers pozicija paėmus x modulį iš 3. result kintamasis nurodo 1 numbers sarašo pozicija kas yra 20 
+
+
+# ========================================
+# 2 DALIS – MAŽOS PROGRAMAVIMO UŽDUOTYS
+# ========================================
+
+# UŽDUOTIS 1.
+# Užpildyk trūkstamą kodo dalį: funkcija turi suskaičiuoti, kiek kartų sąraše pasirodo elementas target.
+# lst = [1, 2, 3, 4, 5, 6, 1]
+# def count_occurrences(lst, target):
+#     count = 0
+#     for item in lst:
+#         if item == 1:
+#             count =+ 1
+#         # TODO_: Pridėti trūkstamas eilutes
+#     return count
+# print(count_occurrences)
+
+# UŽDUOTIS 2.
+# Parašyk vieną eilutę, kuri pridėtų skaičių 99 į sąrašo pabaigą.
+# numbers = [1, 2, 3, 4]
+# TODO_: Viena eilutė:
+
+# UŽDUOTIS 3.
+# Pakeisk kodą taip, kad atspausdintų TAU tinkantį sakinį (turi išsirinkti 1 arba 2 sakinio pabaigos žodžius po dvitašakio).
+# Negali keisti kintamojo "tekstas"
+
+# tekstas = "Man programuoti su Python sekasi: labai gerai blogai neblogai"
+# print(tekstas[0:33] + tekstas[52:61])
+
+# ========================================
+# 3 DALIS – DIDŽIOJI UŽDUOTIS
+# ========================================
+
+"""
+Sukurk programą.
+Jei kažkurio žingsnio padaryti negali, pakeisk jį paprastesniu, kad galėtum dirbti toliau.
+
+Programa turi:
+1. Paprašyti vartotojo įvesti N skaičių (kiek skaičių įves).
+2. Sukurti tuščią sąrašą.
+3. For ciklu surinkti visus įvestus skaičius į sąrašą. 
+4. Suskaičiuoti, kiek sąraše yra lyginių skaičių.
+5. Surikiuoti sąrašo elementus didėjimo tvarka su bubble sort.
+6. Paslinkti visus saraso elementus į kairę (kokiu nori būdu).
+7. Aiškiai atspausdinti rezultatus.
+
+"""
+
+# TODO_: Tavo sprendimas:
+
+lst = from n import randint      # atsiprasau bet praktikos visai nemoku 
+# [1, 2, 4, 5, 3, 7, 5, 4, 9, 6]
+n = int(input("iveskite kiek elementu turi sarasas: "))
+print(lst) 
+empty_lst = []
+for i in lst:
+    for j in empty_lst:
+        empty_lst[j] = empty_lst[j] + lst[i]
+print(empty_lst)
